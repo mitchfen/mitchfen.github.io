@@ -1,7 +1,7 @@
 {
   "name": "mitchfen_xyz",
   "version": "0.1.0",
-  "homepage": "https://mitchfen.xyz/",
+  "homepage": "http://mitchfen.github.io/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
