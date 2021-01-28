@@ -1,7 +1,7 @@
 {
   "name": "mitchfen_xyz",
   "version": "0.1.0",
-  "homepage": "http://mitchfen.github.io/",
+  "homepage": "https://mitchfen.xyz/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/mitchfen/mitchfen.github.io.git"
   },
   "eslintConfig": {
     "extends": [
