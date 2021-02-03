@@ -14,18 +14,18 @@ class About extends Component {
         <React.Fragment>
         <div className="row">
           {/* Left empty column */}
-          <div className="col-sm-2"></div>
-          <div className="col-sm-8">
-            <header className="App-header">
-              Under construction - Redesigning with React
-            </header>        
+          <div className="col-sm-1"></div>
+          <div className="col-sm-10">       
             <div className="row">
               <div className="col-sm-3">
                 <br></br>
+                <h4>Mitchell Fenner</h4>
                 <img src={headShot} width="100%" alt="My cute face."/>
               </div>
               <div className="col-sm-9">
                 <p>
+                <br></br>
+                <br></br>
                 <br></br>
                 I'll be filling this site out more as I teach myself React and get better with JavaScript.
 
