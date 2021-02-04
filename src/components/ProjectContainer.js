@@ -3,7 +3,7 @@ import Project from "./Project"
 const ProjectContainer = () => {
   return (
     <div>
-      <Project title='Passed parameter'/>
+      <Project title='Passed parameter' bodyCopy="• Lorem Ipsum" />
     </div>
   )
 }

@@ -1,3 +1,4 @@
-## Recreating my website with React
+## My Personal Website
 
-🌱 Learning
+ - Check it out: [mitchfen.xyz](https://mitchfen.xyz)
+ - Created using React, JavaScript, Node

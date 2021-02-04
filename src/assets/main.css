@@ -1,5 +1,5 @@
 :root {
-    zoom: 110%;
+    zoom: 120%;
     --bg-color: #14171a;
     --bg-color2: #272727;
     --mainColor: #cccccc;
@@ -43,10 +43,10 @@
   }
   
   hr {
-    border: 0.75px solid var(--mainColor);
+    border: 0.025em solid var(--mainColor);
     background: var(--mainColor);
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
   
   strong {
@@ -79,6 +79,18 @@
     color: var(--mainColor);
   }
   
-  .navbar, .bg-dark {
-    background-color: var(--bg-color2) !important;
+  .navbar {
+    background-color: var(--bg-color) !important;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .navbar-nav, .nav-link {
+    color: var(--accentColor2) !important;
+    font-size: 160%;
+  }
+
+  .navbar-brand {
+    font-size: 160%;
+    color: var(--mainColor) !important;
   }
