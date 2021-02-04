@@ -1,7 +1,10 @@
 {
   "name": "personal_website",
-  "version": "0.1.1",
+  "version": "2.0.0",
   "homepage": "http://mitchfen.github.io/personal_website",
+  "repository": "git@github.com:mitchfen/personal_website.git",
+  "author": "Mitchell Fenner <mitchfen@protonmail.com>",
+  "license": "MIT",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -13,7 +16,6 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
-    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },

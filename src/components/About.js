@@ -9,16 +9,20 @@ const About = () => {
     <>    
       <div className="row">
         <div className="col-sm-3">
+          <h2>Mitchell Fenner</h2>
           <img src={headShot} width="100%" alt="My cute face."/>
         </div>
         <div className="col-sm-9">
+          <br/>
+          <br/>
           <p>
-          Welcome! <br/>
-          I built this site with React, JavaScript, Bootstrap, and GitHub pages. <br/>
-          I'm using the <a href='https://draculatheme.com/'>Dracula</a> colorscheme.<br/>
-          </p>
-          
-          <p>
+          Welcome!
+          <br/>
+          I built this site with React, JavaScript, and Bootstrap. It's deployed on GitHub pages.
+          <br/>
+          <a href="https://github.com/mitchfen/personal_website">View the source code on GitHub 🡥</a>
+          <br/>
+          <br/>
           <SiGithub /> <a href="https://github.com/mitchfen" rel="noopener noreferrer" target="_blank">mitchfen</a>
           <br/>
           <SiMailDotRu /> <a href="mailto:mitchfen@protonmail.com">mitchfen@protonmail.com</a>
@@ -28,6 +32,7 @@ const About = () => {
           <SiOrcid /> <a href="https://orcid.org/0000-0002-9684-0447">0000-0002-9684-0447</a>
           <br/>
           <GoLock /> <a href={pgpKey} rel="noopener noreferrer" target="_blank">Download my PGP key</a> &#8595;
+          <br/>
           <br/>
           </p>
         </div>

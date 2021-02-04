@@ -1,19 +1,12 @@
-import PropTypes from 'prop-types'
-
-const Footer = props => {
+const Footer = () => {
   return (
-    <div>
       <footer className="text-center text-lg-start">
         <div className="text-center p-3">
-          © 2021 Copyright: Mitchell Fenner
+          <br/>
+          © 2021 Copyright: Mitchell Fenner - <a href="https://github.com/mitchfen/personal_website">View the source code on GitHub 🡥</a>
         </div>
       </footer>
-    </div>
   )
-}
-
-Footer.propTypes = {
-    
 }
 
 export default Footer
