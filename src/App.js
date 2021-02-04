@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Components
 import About from './components/About'
 import ProjectContainer from './components/ProjectContainer'
-import Footer from './Footer'
 
 function App() {
   return (
