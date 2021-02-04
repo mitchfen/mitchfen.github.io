@@ -25,14 +25,14 @@ function App() {
               <ul className="navbar-nav mr-auto">
                 {/*Nothing*/}
               </ul>
-              <a className="nav-link" href="/">About</a>
-              <a className="nav-link" href="/ProjectContainer">Projects</a>
+              <a className="nav-link" href="/personal_website">About</a>
+              <a className="nav-link" href="/personal_website/ProjectContainer">Projects</a>
             </div>
           </nav>
           <hr/>
         <Switch>
-          <Route exact path='/' exact render = {() => <About />} ></Route>
-          <Route exact path='/ProjectContainer' exact render = {() => <ProjectContainer />} ></Route>
+          <Route exact path='/personal_website' exact render = {() => <About />} ></Route>
+          <Route exact path='/personal_website/ProjectContainer' exact render = {() => <ProjectContainer />} ></Route>
         </Switch>
       </div>
       
