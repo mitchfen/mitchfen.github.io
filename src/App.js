@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 // Components
 import About from './components/About'
@@ -30,15 +30,17 @@ function App() {
             </div>
           </nav>
           <hr/>
-        <Route exact path='/' component={About}></Route>
-        <Route path='/ProjectContainer' component={ProjectContainer}></Route>
-
+        <Switch>
+          <Route exact path='/' exact render = {() => <About />} ></Route>
+          <Route exact path='/ProjectContainer' exact render = {() => <ProjectContainer />} ></Route>
+        </Switch>
       </div>
       
       {/* Right empty column for spacing*/}
       <div className="col-sm-1"></div>
     
     </div>
+
     </Router> 
   )
 }
