@@ -6,8 +6,8 @@
     /*--accentColor: rgb(242, 194, 63);*/
     --accentColor: #BD1E51;
     --accentColor2: #2F2F2F;
-    --hoverColor: rgb(37, 208, 240);
-    --accentColor3: rgb(80, 250, 123);
+    --hoverColor: #25d0f0;
+    --accentColor3: #68255b;
   }
   
   h1, sub{
@@ -49,10 +49,6 @@
     background: var(--mainColor);
     margin-top: 1em;
     margin-bottom: 2em;
-  }
-  
-  strong {
-    color: var(--mainColor);
   }
   
   a {

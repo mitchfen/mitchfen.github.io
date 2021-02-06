@@ -1,32 +1,39 @@
 import PropTypes from 'prop-types'
 
-const Project = ({title, repoLink, bulletPoint0, bulletPoint1, bulletPoint2}) => {
-  let repoText = "View the code on GitHub 🡥"
+const Project = ({title, repoLink, bulletPoint0, bulletPoint1, bulletPoint2, tags}) => {
+  
+  let repoText = "";
+  let tagsText = "";
+  
+  // Decide whether to show the link to GitHub
   if(repoLink === "") {
-    repoText = ""
+    repoText = "";
+  } else {
+    repoText = "View the code on GitHub 🡥";
   }
+  
+  // Create the string to display the tags
+  if(tags) {
+  for(let i = 0; i < tags.length; i++) {
+    tagsText = tagsText + ` [${tags[i]}] `
+  }
+}
+
   return (
     <>
     <div className="row">
       {/* Middle column with content */}
       <div id="projectID" className="col-sm-9">
         <h3>{title}</h3>
-        {/* 
-        [<small>Python</small>]
-        [<small>MySQL</small>]
-        [<small>JavaScript</small>]
-        [<small>Flask</small>]
-        [<small>Bootstrap CSS</small>]
-        */}
-        
+        <small><strong>{tagsText}</strong></small>
+        <br/><br/>       
         {bulletPoint0}
-        <br/><br/>
-        {bulletPoint1}
-        <br/><br/>
-        {bulletPoint2}
         <br/>
+        {bulletPoint1}
+        <br/>
+        {bulletPoint2}
+        <br/><br/>
         <a href={repoLink} rel="noopener noreferrer" target="_blank">{repoText}</a>
-        
       </div>
     </div>  
   </>
