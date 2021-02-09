@@ -62,8 +62,8 @@ function App() {
             <div className="carousel-item">
               <Project 
                 title="Librebooting my X200" 
-                bulletPoint0="The Intel Management Engine is spooky. Nobody can prove whether it is doing anything nefarious because the code is not open source. I wanted a computer that is 100% FOSS, so I installed Libreboot - an open source BIOS implementation." 
-                bulletPoint1="I picked up an old Thinkpad X200 on eBay (a couple actually). I scavanged the good parts from the machines and cobbled together an almost flawless X200. Then, with a lot of Reddit and YouTube tutorials I was able to flash Libreboot to the BIOS chip using a Raspberry Pi." 
+                bulletPoint0="The Intel Management Engine is spooky. Nobody knows whether it is doing anything nefarious because the code is not open source. I wanted a computer that is 100% FOSS, so I installed Libreboot - an open source BIOS implementation." 
+                bulletPoint1="I picked up an old Thinkpad X200 on eBay, and was able to flash Libreboot to the BIOS chip using a Raspberry Pi." 
                 bulletPoint2="As a bonus, I replaced the TN panel with an IPS panel!"
                 tags={['Firmware', 'Hardware']}
                 repoLink=""/>
@@ -80,17 +80,17 @@ function App() {
             </div>
             <div className="carousel-item">
               <Project 
-                title="Artist Database Builder" 
+                title="Concert Tracker" 
                 bulletPoint0="A GUI program I made with Python and Tkinter." 
                 bulletPoint1="I go to a lot of concerts, and was having trouble keeping track of who I've seen." 
                 bulletPoint2="I wanted a solution that would allow me to use select statements to find all the artists I saw at a given venue, year, etc." 
-                repoLink="https://github.com/mitchfen/Artist_Database_Builder"
+                repoLink="https://github.com/mitchfen/concert_tracker"
                 tags={['Python', 'Tkinter', 'SQLite']}
                 />
             </div>
             <div className="carousel-item">
               <Project 
-                title="mp3 + wav renamer" 
+                title="Music Organization Program" 
                 bulletPoint0="Python script I wrote to help organize my mess of a music library." 
                 bulletPoint1="Each mp3 or wav is read into a list. The songs are played in turn, and you can delete or rename them." 
                 bulletPoint2="This was a good introduction to Python and got me thinking about what else I can automate." 
