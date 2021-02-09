@@ -6,5 +6,4 @@
 [![Node](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white)]()
 [![NPM](https://img.shields.io/badge/NPM-CB3837?style=flat-square&logo=NPM&logoColor=white)]()
 
- - Displays all my links and projects: [mitchfen.xyz](https://mitchfen.github.io/personal_website)   
- - Currently the DNS records are setup to redirect `mitchfen.xyz` to `mitchfen.github.io/personal_website` while it is deployed on GitHub pages. 
+Displays all my links and projects: [https://mitchfen.xyz](https://mitchfen.xyz)   
