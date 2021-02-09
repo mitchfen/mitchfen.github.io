@@ -21,8 +21,8 @@ function App() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <Project 
-                title="QEMU Home Server" 
-                bulletPoint0="I built my own home server running Linux as the host OS. Using QEMU I run a Windows 10 VM and a pfSense VM. I use VFIO to pass the NVME SSD, the second graphics card, and a USB controller through to the Windows VM." 
+                title="KVM Home Server" 
+                bulletPoint0="I built my own home server running Linux as the host OS. Using KVM I run a Windows 10 VM and a pfSense VM. I use VFIO to pass the NVME SSD, the second graphics card, and a USB controller through to the Windows VM." 
                 bulletPoint1="Inside the pfSense VM, I setup pfBlocker to block malicious websites at the router level." 
                 bulletPoint2="Setup Grafana and Samba for monitoring and file sharing on the host." 
                 repoLink=""

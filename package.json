@@ -1,8 +1,8 @@
 {
   "name": "personal_website",
   "version": "2.0.0",
-  "homepage": "http://mitchfen.github.io/personal_website",
-  "repository": "git@github.com:mitchfen/personal_website.git",
+  "homepage": "https://mitchfen.github.io",
+  "repository": "git@github.com:mitchfen/mitchfen.github.io.git",
   "author": "Mitchell Fenner <mitchfen@protonmail.com>",
   "license": "MIT",
   "private": false,
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp CNAME build/CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
