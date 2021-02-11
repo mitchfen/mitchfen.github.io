@@ -1,4 +1,4 @@
-name: gh-pages publisher 🚀
+name: CI/CD 🚀
 
 on:
   push:
@@ -8,15 +8,28 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm ci
-      - run: git config user.name "Mitchell Fenner" && git config user.email "mitchfen@protonmail.com"
-      - run: git remote set-url origin https://mitchfen:${{secrets.GITHUB_TOKEN}}>@github.com/mitchfen/mitchfen.github.io
-      - run: npm run build
-      - run: npm run deploy
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Deploy
+      - run: |
+          git config --global user.name $user_name
+          git config user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          npm run deploy
         env:
-          GH_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
+            user_name: 'Mitchell Fenner'
+            user_email: 'mitchfen@protonmail.com'
+            github_token: ${{ secrets.SECRET_GITHUB_TOKEN }}
+            repository: ${{ github.repository }}
+
