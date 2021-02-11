@@ -2,10 +2,7 @@
   "name": "personal_website",
   "version": "2.0.0",
   "homepage": "https://mitchfen.github.io",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mitchfen/mitchfen.github.io.git"
-  },
+  "repository": "git@github.com:mitchfen/mitchfen.github.io.git",
   "author": "Mitchell Fenner <mitchfen@protonmail.com>",
   "license": "MIT",
   "private": false,
