@@ -15,6 +15,7 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: git config user.name "Mitchell Fenner" && git config user.email "mitchfen@protonmail.com"
+      - run: git remote set-url origin https://mitchfen:${{secrets.GITHUB_TOKEN}}>@github.com/mitchfen/mitchfen.github.io
       - run: npm run build
       - run: npm run deploy
         env:
