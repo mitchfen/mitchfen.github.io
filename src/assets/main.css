@@ -1,104 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
-    zoom: 90%;
-    --bg-color: #fff;
-    --mainColor: #696969;
-    /*--accentColor: rgb(242, 194, 63);*/
-    --accentColor: #BD1E51;
-    --accentColor2: #2F2F2F;
-    --hoverColor: #25d0f0;
-    --accentColor3: #383200;
-  }
-  
-  h1, sub{
-    color: var(--accentColor2) !important;
-  }
-  
-  body {
-    font-weight: bold;
-    background-color: var(--bg-color);
-    color: var(--mainColor);
-    position: relative;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  #projectID {padding-top:0%; padding-left: 20%; color: var(--mainColor); background-color: var(--bg-color);}
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-    
-  h2,h3,h4{
-    color: var(--accentColor2);
-    font-weight: bold;
-  }
-  
-  th {
-    color: var(--accentColor3);
-  }
-  
-  small {
-    color: var(--accentColor3)
-  }
-  
-  hr {
-    border: 0.025em solid var(--mainColor);
-    background: var(--mainColor);
-    margin-top: 1em;
-    margin-bottom: 2em;
-  }
-  
-  a {
-    color: var(--accentColor);
-  }
-  
-  a:hover {
-    color: var(--hoverColor);
-    text-decoration: underline;
-  }
-  
-  ul.nav a:hover { 
-    color: var(--hoverColor) !important;
-    background-color: var(--bg-color2);
-  }
-  
-  .navbar {
-    background-color: var(--bg-color) !important;
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
+  zoom: 90%;
+  --bg-color: #fff;
+  --mainColor: #696969;
+  /*--accentColor: rgb(242, 194, 63);*/
+  --accentColor: #bd1e51;
+  --accentColor2: #2f2f2f;
+  --hoverColor: #25d0f0;
+  --accentColor3: #2e0330;
+}
 
-  .navbar-nav, .nav-link {
-    color: var(--accentColor2) !important;
-    font-size: 160%;
-  }
+h1,
+sub {
+  color: var(--accentColor2) !important;
+}
 
-  .navbar-brand {
-    font-size: 160%;
-    color: var(--mainColor) !important;
-  }
+body {
+  font-weight: bold;
+  background-color: var(--bg-color);
+  color: var(--mainColor);
+  position: relative;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#projectID {
+  padding-top: 0%;
+  padding-left: 20%;
+  color: var(--mainColor);
+  background-color: var(--bg-color);
+}
 
-  .justifyRight {
-    text-align: right;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 
+h2,
+h3,
+h4 {
+  color: var(--accentColor2);
+  font-weight: bold;
+}
 
-  .carousel .carousel-control-next-icon {
-    /* change fill="currentColor" to %23fff to make it white  */
-      background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-right-circle-fill" width="16" height="16" viewBox="0 0 16 16" fill="currentColor " xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>');
-    }
-    
-    .carousel .carousel-control-prev-icon {
-      /* change fill="currentColor" to %23fff to make it white  */
-        background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>');
-    }
-    
-    
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        /* Use to adjust size of icons */
-        width: 3rem;
-        height: 3rem;
-    }
+th {
+  color: var(--accentColor3);
+}
+
+small {
+  color: var(--accentColor3);
+}
+
+hr {
+  border: 0.025em solid var(--mainColor);
+  background: var(--mainColor);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+a {
+  color: var(--accentColor);
+}
+
+a:hover {
+  color: var(--hoverColor);
+  text-decoration: underline;
+}
+
+ul.nav a:hover {
+  color: var(--hoverColor) !important;
+  background-color: var(--bg-color2);
+}
+
+.navbar {
+  background-color: var(--bg-color) !important;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.navbar-nav,
+.nav-link {
+  color: var(--accentColor2) !important;
+  font-size: 160%;
+}
+
+.navbar-brand {
+  font-size: 160%;
+  color: var(--mainColor) !important;
+}
+
+.justifyRight {
+  text-align: right;
+}
+
+.carousel .carousel-control-next-icon {
+  /* change fill="currentColor" to %23fff to make it white  */
+  background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-right-circle-fill" width="16" height="16" viewBox="0 0 16 16" fill="currentColor " xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>');
+}
+
+.carousel .carousel-control-prev-icon {
+  /* change fill="currentColor" to %23fff to make it white  */
+  background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>');
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  /* Use to adjust size of icons */
+  width: 3rem;
+  height: 3rem;
+}
