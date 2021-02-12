@@ -1,4 +1,4 @@
-name: CI/CD 🚀
+name: CI/CD
 
 on:
   push:
@@ -8,28 +8,27 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      
+
       - name: Setup Node.js 14
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      
+
       - name: Install dependencies
         run: npm install
-      
-      - name: Deploy
+
+      - name: Build and Deploy
         run: |
           git config --global user.name $user_name
           git config user.email $user_email
           git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
         env:
-            user_name: 'Mitchell Fenner'
-            user_email: 'mitchfen@protonmail.com'
-            github_token: ${{ secrets.SECRET_GITHUB_TOKEN }}
-            repository: ${{ github.repository }}
-
+          user_name: "Mitchell Fenner"
+          user_email: "mitchfen@protonmail.com"
+          github_token: ${{ secrets.SECRET_GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
