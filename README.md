@@ -22,4 +22,4 @@
 
 ### Docker
 
-- I built a Docker image in case I deploy the site elsewhere in the future. View it on [Docker Hub](https://hub.docker.com/repository/docker/mitchfen/personal_website/general).
+- I built a Docker image in case I deploy the site elsewhere in the future. View it on [Docker Hub](https://hub.docker.com/r/mitchfen/personal_website).
