@@ -1,16 +1,13 @@
-// Components
-import About from "./components/About";
-import Project from "./components/Project";
+import React, { Component } from "react";
+import { About } from "./About";
+import { Project } from "./Project";
 
-function App() {
-  return (
-    <div className="row">
-      {/* Left empty column for spacing */}
-      <div className="col-sm-1"></div>
+export class Home extends Component {
+  static displayName = Home.name;
 
-      {/* Main column which contains all components */}
-      <div className="col-sm-10">
-        <br />
+  render() {
+    return (
+      <>
         <About />
         <h3 className="justifyRight"> &#9660; Checkout some of my Projects</h3>
         <hr />
@@ -29,7 +26,6 @@ function App() {
                 bulletPoint2="Inside the pfSense VM, I setup pfBlocker to block malicious websites at the router level."
                 bulletPoint0="Built my own home server running Linux as the host OS. I run a pfSense VM and Windows 10 VM using KVM. I use VFIO to pass a GPU through to Windows, and NIC
                 through to pfSense."
-                repoLink=""
                 tags={[
                   "Hardware",
                   "Virtualization",
@@ -145,11 +141,7 @@ function App() {
             <span className="sr-only">Next</span>
           </a>
         </div>
-
-        {/* Footer will go here*/}
-      </div>
-    </div>
-  );
+      </>
+    );
+  }
 }
-
-export default App;

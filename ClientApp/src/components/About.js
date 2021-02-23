@@ -1,20 +1,22 @@
+import React, { Component } from "react";
+
 import pgpKey from "../assets/mitchfen.asc";
 import headShot from "../assets/headshot.jpg";
 
 import { SiGithub, SiLinkedin, SiMailDotRu, SiOrcid } from "react-icons/si";
 import { GoLock } from "react-icons/go";
 
-const About = () => {
-  return (
-    <>
+export class About extends Component {
+  static displayName = About.name;
+  render() {
+    return (
       <div className="row">
-        <div className="col-sm-3">
-          <h2>Mitchell Fenner</h2>
+        <div className="col-md-3">
+          <br />
           <img src={headShot} width="100%" alt="My cute face." />
         </div>
-        <div className="col-sm-9">
+        <div className="col-md-9">
           <p>
-            <br />
             <br />
             Welcome!
             <br />
@@ -56,8 +58,6 @@ const About = () => {
           </p>
         </div>
       </div>
-    </>
-  );
-};
-
-export default About;
+    );
+  }
+}

@@ -5,13 +5,11 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white)]()
 [![Node](https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white)]()
-[![Node](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)]()
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)]()
 
 ## Overview
 
 - Displays all my links and projects!
-
-- I was using the static site generator [Jekyll](https://github.com/jekyll/jekyll) to build my site. That met all my needs, but I wanted to learn more about these technologies, and building this was fun!
 
 ### GitHub Actions
 

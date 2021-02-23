@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
-  zoom: 90%;
   --bg-color: #fff;
   --mainColor: #696969;
-  /*--accentColor: rgb(242, 194, 63);*/
   --accentColor: #bd1e51;
   --accentColor2: #2f2f2f;
   --hoverColor: #25d0f0;
   --accentColor3: #2e0330;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 h1,
@@ -41,7 +45,7 @@ h2,
 h3,
 h4 {
   color: var(--accentColor2);
-  font-weight: bold;
+  font-size: 130%;
 }
 
 th {
@@ -69,25 +73,30 @@ a:hover {
 }
 
 ul.nav a:hover {
-  color: var(--hoverColor) !important;
+  color: var(--hoverColor);
   background-color: var(--bg-color2);
 }
 
 .navbar {
-  background-color: var(--bg-color) !important;
+  background-color: var(--bg-color);
   padding-top: 20px;
   padding-bottom: 0px;
 }
 
+.navbar-brand,
 .navbar-nav,
 .nav-link {
-  color: var(--accentColor2) !important;
-  font-size: 160%;
+  font-size: 130%;
+  color: var(--mainColor);
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: var(--accentColor2);
+  font-size: 130%;
 }
 
-.navbar-brand {
-  font-size: 160%;
-  color: var(--mainColor) !important;
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 .justifyRight {
