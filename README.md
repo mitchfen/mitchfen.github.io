@@ -1,14 +1,14 @@
 # Mitchell Fenner's Personal Website
 
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black)]()
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white)]()
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)]()
+![CI/CD](https://github.com/mitchfen/mitchfen.github.io/workflows/CI/CD/badge.svg)
 
-## Overview
+I was originally using the static site generator [Jekyll](https://github.com/jekyll/jekyll) to build my site, but eventually built my own static site with just HTML and Bootstrap CSS. That was a "good enough" solution, but I wanted to learn React, GitHub actions, and Docker.
 
-My personal website displays all my links and projects.  
-I originally built it using the static site generator Jekyll, but shifted to a hand written static site hosted on GitHub pages.
+### GitHub Actions 🚀
 
-That was a "good enough" solution, but I wanted to learn React and ended up rewriting it again. That was a good opportunity to use GitHub Actions for CI/CD, but GitHub pages didn't make it easy to incorporate React Router.
+- When code is pushed to the master branch, the [CI/CD workflow](https://github.com/mitchfen/mitchfen.github.io/actions) publishes the site.
 
-Cue Docker and Azure. After implementing a minimal backend using ASP.NET Core 5.0, I Dockerized the site and now host it using Azure App Service. This is admittedly overkill for the time being, but it provides me a platform that I can build upon as I continue to learn.
+### Docker 🐳
+
+- I built a Docker image in order to test the website on platforms like Azure and Digital Ocean.
+- The "implementing-backend" branch is where I am implementing a .Net Core 5.0 backend. When I have that finished I will dockerize it and deploy with a cloud provider.
