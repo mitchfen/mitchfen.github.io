@@ -9,7 +9,6 @@ import {
   NavLink,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import "../assets/navbar.css";
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -53,13 +52,8 @@ export class NavMenu extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">
-                    Counter
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/AnotherPage">
-                    AnotherPage
+                  <NavLink tag={Link} className="text-dark" to="/Projects">
+                    Projects
                   </NavLink>
                 </NavItem>
               </ul>

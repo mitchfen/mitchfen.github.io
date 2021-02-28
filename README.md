@@ -1,25 +1,14 @@
 # Mitchell Fenner's Personal Website
 
-![CI/CD](https://github.com/mitchfen/mitchfen.github.io/workflows/CI/CD/badge.svg)  
 [![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black)]()
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white)]()
-[![Node](https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white)]()
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)]()
 
 ## Overview
 
-- Displays all my links and projects!
+My personal website displays all my links and projects.  
+I originally built it using the static site generator Jekyll, but shifted to a hand written static site hosted on GitHub pages.
 
-### GitHub Actions
+That was a "good enough" solution, but I wanted to learn React and ended up rewriting it again. That was a good opportunity to use GitHub Actions for CI/CD, but GitHub pages didn't make it easy to incorporate React Router.
 
-- When code is pushed to the master branch, the [CI/CD workflow](https://github.com/mitchfen/mitchfen.github.io/actions) executes and does the following:
-  1. Clones the repo to an Ubuntu environment.
-  2. Sets up node.js and installs the dependencies.
-  3. Builds the project, including copying CNAME and 404.html.
-  4. Pushes the build to the gh-pages branch where it is deployed.
-
-### Docker
-
-- I built a Docker image in case I deploy the site elsewhere in the future. View it on [Docker Hub](https://hub.docker.com/r/mitchfen/personal_website).
-- For now I will be building new images manually when I make big changes to the site. Hopefully soon I can setup a second GitHub actions workflow which will automate this process.
+Cue Docker and Azure. After implementing a minimal backend using ASP.NET Core 5.0, I Dockerized the site and now host it using Azure App Service. This is admittedly overkill for the time being, but it provides me a platform that I can build upon as I continue to learn.
