@@ -1,98 +1,144 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
-  zoom: 90%;
-  --bg-color: #fff;
-  --mainColor: #696969;
-  /*--accentColor: rgb(242, 194, 63);*/
-  --accentColor: #bd1e51;
-  --accentColor2: #2f2f2f;
-  --hoverColor: #25d0f0;
-  --accentColor3: #2e0330;
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --pink: #ff79c6;
+  --green: #50fa7b;
+  --cyan: #8be9fd;
+  --yellow: #f1fa8c;
 }
 
-h1,
-sub {
-  color: var(--accentColor2) !important;
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.foreground {
+  color: var(--foreground);
+}
+
+.green {
+  color: var(--green);
 }
 
 body {
-  font-weight: bold;
-  background-color: var(--bg-color);
-  color: var(--mainColor);
-  position: relative;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 25pt;
+  font-family: monospace, sans-serif;
+  padding: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#projectID {
-  padding-top: 0%;
-  padding-left: 10%;
-  color: var(--mainColor);
-  background-color: var(--bg-color);
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: monospace, Menlo, Monaco, Consolas, "Courier New";
+  padding: 2px;
 }
 
-h2,
-h3,
-h4 {
-  color: var(--accentColor2);
-  font-weight: bold;
+legend {
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #ccc;
 }
 
-th {
-  color: var(--accentColor3);
-}
-
-small {
-  color: var(--accentColor3);
-}
-
-hr {
-  border: 0.025em solid var(--mainColor);
-  background: var(--mainColor);
-  margin-top: 1em;
-  margin-bottom: 2em;
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
 }
 
 a {
-  color: var(--accentColor);
+  color: var(--green);
+  text-decoration: none;
 }
 
-a:hover {
-  color: var(--hoverColor);
-  text-decoration: underline;
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-ul.nav a:hover {
-  color: var(--hoverColor) !important;
-  background-color: var(--bg-color2);
+.right-column {
+  max-width: 50%;
 }
 
-.justifyRight {
-  text-align: right;
+.left-column {
+  padding-right: 5em;
 }
 
-.carousel .carousel-control-next-icon {
-  /* change fill="currentColor" to %23fff to make it white  */
-  background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-right-circle-fill" width="16" height="16" viewBox="0 0 16 16" fill="currentColor " xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>');
+.social {
+  margin: 10px;
+  will-change: transform;
+  transition: transform 450ms;
+  color: var(--foreground);
 }
 
-.carousel .carousel-control-prev-icon {
-  /* change fill="currentColor" to %23fff to make it white  */
-  background-image: url('data:image/svg+xml,<svg class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>');
+.social:hover {
+  color: var(--green);
+  transition: transform 125ms;
+  transform: translateY(-10px);
 }
 
-.carousel-control-next-icon {
-  /* Use to adjust size of icons */
-  width: 1.5rem;
-  height: 1.5rem;
+@media (prefers-reduced-motion: reduce) {
+  .social {
+    transition: none;
+  }
 }
 
-.carousel-control-prev-icon {
-  opacity: 0;
+@media (max-width: 1350px) {
+  body {
+    font-size: 24pt;
+  }
+}
+
+@media (max-width: 950px) {
+  .left-column {
+    padding-right: 2em;
+  }
+  body {
+    font-size: 23pt;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-parent {
+    flex-direction: column;
+  }
+  .left-column {
+    padding-right: 0em;
+  }
+  .right-column {
+    max-width: 100%;
+  }
+  .social {
+    color: var(--green);
+  }
+  body {
+    font-size: 21pt;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 325px) {
+  body {
+    font-size: 10pt;
+  }
 }
