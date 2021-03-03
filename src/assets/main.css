@@ -26,7 +26,7 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-size: 19pt;
+  font-size: 14pt;
   font-family: monospace, sans-serif;
   padding: 1em;
   -webkit-font-smoothing: antialiased;
@@ -111,11 +111,14 @@ a {
   .social {
     color: var(--green);
   }
+  body {
+    font-size: 19pt;
+  }
 }
 
 @media (max-width: 800px) {
   body {
-    font-size: 19pt;
+    font-size: 14pt;
   }
 }
 

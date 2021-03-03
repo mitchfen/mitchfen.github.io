@@ -39,31 +39,31 @@ const About = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiGithub className="social" size={44} />
+              <SiGithub className="social" size={35} />
             </a>{" "}
             <a
               href="https://www.linkedin.com/in/mitchfen/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiLinkedin className="social" size={44} />
+              <SiLinkedin className="social" size={35} />
             </a>{" "}
             <a
               href="https://www.hackerrank.com/mitchfen"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiHackerrank className="social" size={44} />
+              <SiHackerrank className="social" size={35} />
             </a>{" "}
             <a
-              href="https://orcid.org/0000-0002-9684-0447"
+              href="https://orcid.org/0000-0002-9684-0357"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiOrcid className="social" size={44} />
+              <SiOrcid className="social" size={35} />
             </a>{" "}
             <a href="mailto:mitchfen@protonmail.com">
-              <SiMailDotRu className="social" size={44} />
+              <SiMailDotRu className="social" size={35} />
             </a>
             <br />
             <small>
