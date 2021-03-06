@@ -1,4 +1,4 @@
-//import resume from "../assets/Mitchell-Fenner-resume.pdf";
+import resume from "../assets/Mitchell_Fenner_Resume.pdf";
 
 import {
   SiGithub,
@@ -14,26 +14,25 @@ const About = () => {
       <div className="flex-parent">
         <div className="left-column">
           <fieldset>
-            <legend style={{ borderStyle: "round" }}>intro.cob</legend>
+            <legend style={{ borderStyle: "round" }}>greeting.cob</legend>
             <code className="pink">IDENTIFICATION DIVISION.</code>
             <br />
             <code className="pink">PROGRAM-ID. </code>
-            <code>mitchfen.xyz.</code>
+            <code>mitchfenxyz.</code>
             <br />
             <code className="pink">AUTHOR. </code>
-            <code className="yellow">Mitchell Fenner.</code>
+            <code className="cyan">Mitchell Fenner.</code>
             <br />
             <code className="pink">PROCEDURE DIVISION.</code>
             <br />
             <code className="pink">DISPLAY </code>
-
             <code>"Welcome to my site! 🤗"</code>
             <br />
             <code className="pink">STOP RUN.</code>
           </fieldset>
           <br />
           <fieldset>
-            <legend>contact.txt</legend>
+            <legend>links.svg</legend>
             <a
               href="https://github.com/mitchfen"
               rel="noopener noreferrer"
@@ -65,53 +64,76 @@ const About = () => {
             <a href="mailto:mitchfen@protonmail.com">
               <SiMailDotRu className="social" size={35} />
             </a>
-            <br />
-            <small>
-              <a
-                href="https://github.com/mitchfen/personal_website"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                View the code for this site 🡥
-              </a>
-            </small>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Downloads/</legend>
+            <p>
+              <a href={resume}>Resume</a>
+            </p>
           </fieldset>
         </div>
         <br />
         <div className="right-column">
           <fieldset>
-            <legend>recent-projects.txt</legend>
-            <p>
-              <p className="pink">This website! 🌐</p>
-              <ul>
-                <li>
-                  Built with React and automated with GitHub Actions. I am more
-                  interested in DevOps than front end development, so I am using
-                  the site as an opportunity to play with CI/CD, Docker, and
-                  cloud hosting platforms.
-                </li>
-              </ul>
-            </p>
-            <p>
-              <p className="pink">Eve Online Price Checker 📡</p>
-              <ul>
-                <li>
-                  Dockerized TypeScript app which uses a REST API to determine
-                  which ore to mine in EVE Online.
-                </li>
-              </ul>
-            </p>
-            <p>
-              <p className="pink">QEMU/KVM Homelab 🧪</p>
-              <ul>
-                <li>
-                  Built my home server running a Ryzen 2700 and Arch Linux. I
-                  setup VMs for pfSense and Windows using VFIO for hardware
-                  passthrough. Also runs pi-hole under docker, Grafana for
-                  monitoring, and samba to serve files.
-                </li>
-              </ul>
-            </p>
+            <legend>recentProjects.txt</legend>
+            <a
+              href="https://github.com/mitchfen/mitchfen.github.io"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ fontSize: "larger" }}
+            >
+              This website
+            </a>
+            <ul>
+              <li>
+                Being more interested in DevOps than front-end development, I am
+                using this site as an opportunity to play with CI/CD pipelines,
+                Docker, and cloud hosting platforms.
+              </li>
+              <br />
+              <li>
+                Built with React, and automated with GitHub Actions. I am also
+                experimenting with a dockerized version including an ASP.NET
+                Core 5.0 backend{" "}
+                <a
+                  href="https://github.com/mitchfen/mitchfen.github.io/tree/implementing-backend"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  here
+                </a>
+                .
+              </li>
+            </ul>
+            <a
+              href="https://github.com/mitchfen/ore_price_checker"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ fontSize: "larger" }}
+            >
+              Eve Online Price Checker
+            </a>
+            <ul>
+              <li>
+                Dockerized TypeScript app which uses a REST API to determine the
+                most profitable ore to mine in EVE Online.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/mitchfen/concert_tracker"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ fontSize: "larger" }}
+            >
+              Concert Tracker
+            </a>
+            <ul>
+              <li>
+                Cross platform Python GUI to keep track of concerts and artists.
+                Uses SQLite and Tk.
+              </li>
+            </ul>
           </fieldset>
         </div>
       </div>
