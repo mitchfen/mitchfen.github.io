@@ -1,7 +1,6 @@
 name: Build and Push Docker Container
 
 on:
-on:
   workflow_run:
     workflows:
       - "Publish to GitHub Pages"
