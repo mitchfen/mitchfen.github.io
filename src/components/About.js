@@ -55,7 +55,7 @@ const About = () => {
               <SiHackerrank className="social" size={35} />
             </a>{" "}
             <a
-              href="https://orcid.org/0000-0002-9684-0357"
+              href="https://orcid.org/0000-0002-9684-0447"
               rel="noopener noreferrer"
               target="_blank"
             >
