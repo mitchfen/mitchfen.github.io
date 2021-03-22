@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 :root {
   --background: #282a36;
   --foreground: #f8f8f2;
@@ -30,8 +32,8 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-size: 14pt;
-  font-family: monospace, sans-serif;
+  font-size: 20pt;
+  font-family: "Inconsolata", monospace, sans-serif;
   padding: 0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,8 +61,8 @@ fieldset {
 }
 
 a {
-  color: var(--green);
-  text-decoration: underline;
+  color: var(--cyan);
+  text-decoration: none;
 }
 
 .flex-parent {
@@ -78,7 +80,7 @@ a {
 }
 
 .social {
-  margin: 0 10px 0 10px;
+  margin: 5px 10px 5px 10px;
   will-change: transform;
   transition: transform 450ms;
   color: var(--foreground);
@@ -96,9 +98,12 @@ a {
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
   .left-column {
     padding-right: 2em;
+  }
+  body {
+    font-size: 15pt;
   }
 }
 
@@ -115,8 +120,13 @@ a {
   .social {
     color: var(--green);
   }
+  .social:hover {
+    color: var(--green);
+    transition: none;
+    transform: none;
+  }
   body {
-    font-size: 19pt;
+    font-size: 15pt;
   }
 }
 

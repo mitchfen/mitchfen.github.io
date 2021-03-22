@@ -1,10 +1,17 @@
-import About from "./components/About";
-//import Project from "./components/Project";
+import LeftColumn from "./components/LeftColumn";
+import RightColumn from "./components/RightColumn";
 
 function App() {
   return (
     <>
-      <About />
+      <div className="flex-parent">
+        <div className="left-column">
+          <LeftColumn />
+        </div>
+        <div className="right-column">
+          <RightColumn />
+        </div>
+      </div>
     </>
   );
 }
