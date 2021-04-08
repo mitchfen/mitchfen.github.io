@@ -1,5 +1,3 @@
-import resume from "../assets/Mitchell_Fenner_Resume.pdf";
-
 import {
   SiGithub,
   SiLinkedin,
@@ -75,7 +73,11 @@ const LeftColumn = () => {
       <fieldset>
         <legend>Downloads/</legend>
         <p>
-          <a href={resume} rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://mitchfen.xyz/documents/Mitchell_Fenner_Resume.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Resume
           </a>
         </p>
