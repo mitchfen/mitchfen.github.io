@@ -21,15 +21,7 @@ const LeftColumn = () => {
           <li>
             Built with React, and automated with GitHub Actions. I am also
             experimenting with a dockerized version dockerized version hosted on
-            Digital Ocean{" "}
-            <a
-              href="https://github.com/mitchfen/mitchfen.github.io/tree/implementing-backend"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              here
-            </a>
-            .
+            Digital Ocean.
           </li>
         </ul>
         <a
