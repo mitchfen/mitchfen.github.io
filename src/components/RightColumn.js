@@ -20,8 +20,8 @@ const LeftColumn = () => {
           <br />
           <li>
             Built with React, and automated with GitHub Actions. I am also
-            experimenting with a dockerized version including an ASP.NET Core
-            5.0 backend{" "}
+            experimenting with a dockerized version dockerized version hosted on
+            Digital Ocean{" "}
             <a
               href="https://github.com/mitchfen/mitchfen.github.io/tree/implementing-backend"
               rel="noopener noreferrer"
