@@ -69,19 +69,6 @@ const LeftColumn = () => {
           <SiDocker className="social" size={35} />
         </a>{" "}
       </fieldset>
-      <br />
-      <fieldset>
-        <legend>Downloads/</legend>
-        <p>
-          <a
-            href="https://mitchfen.xyz/documents/Mitchell_Fenner_Resume.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Resume
-          </a>
-        </p>
-      </fieldset>
     </>
   );
 };
