@@ -17,10 +17,9 @@ const LeftColumn = () => {
             using this site as an opportunity to play with CI/CD pipelines,
             Docker, and cloud hosting platforms.
           </li>
-          <br />
           <li>
             Built with React, and automated with GitHub Actions. I am also
-            experimenting with a dockerized version dockerized version hosted on
+            experimenting with a dockerized version hosted on
             Digital Ocean.
           </li>
         </ul>
