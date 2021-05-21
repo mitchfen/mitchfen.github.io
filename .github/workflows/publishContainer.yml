@@ -1,0 +1,25 @@
+name: Publish container
+
+on:
+  workflow_run:
+    workflows:
+      - "Publish site"
+    types:
+      - completed
+
+jobs:
+  publishContainer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GH_PAGES_SECRET }}
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: |
+            ghcr.io/personal_website:latest
