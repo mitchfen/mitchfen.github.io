@@ -1,19 +1,20 @@
-[![Publish site](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishSite.yaml/badge.svg)](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishSite.yaml)
-[![Publish container](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishContainer.yml/badge.svg)](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishContainer.yml)
-
 # Mitchell Fenner's Personal Website
+
+[![Publish container](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishContainer.yml/badge.svg)](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishContainer.yml)
+[![Publish site](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishSite.yaml/badge.svg)](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publishSite.yaml)
 
 I'm more interested in DevOps than front-end development, so I'm using this site as an opportunity to play with CI/CD pipelines, Docker, and cloud hosting platforms.
 
-## Tech Stack
+## How I automate it
 
-**Client:** React
-
-**CI/CD:** GitHub Actions
+- Publishing the site 🚀
+  - When code is pushed to the master branch, the [publish workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publish.yaml) automatically runs. This action clones my repo to an Ubuntu environment, uses npm to create a production build, and publishes the build to the gh-pages branch.
+- docker-push.yaml 🐳
+  - Upon success of the publish workflow, a [second workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/docker-push.yml) builds and pushes my Docker image to dockerhub. This will be especially useful if I switch to Azure app service or Digital Ocean in the future.
 
 ## Run Locally
 
-Clone, install dependencies, and run:
+Using npm
 
 ```bash
   git clone https://github.com/mitchfen/mitchfen.github.io.git
@@ -22,16 +23,13 @@ Clone, install dependencies, and run:
   npm run start
 ```
 
-## Appendix
+Using docker
 
-### How I automate it
+```bash
+sudo docker run --rm -p 80:80 ghcr.io/mitchfen/mitchfen.github.io:latest
+```
 
-- publish.yaml 🚀
-  - When code is pushed to the master branch, the [publish workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publish.yaml) automatically runs. This action clones my repo to an Ubuntu environment, uses npm to create a production build, and publishes the build to the gh-pages branch.
-- docker-push.yaml 🐳
-  - Upon success of the publish workflow, a [second workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/docker-push.yml) builds and pushes my Docker image to dockerhub. This will be especially useful if I switch to Azure app service or Digital Ocean in the future.
-
-### History
+## History
 
 I started out using the static site generator [Jekyll](https://github.com/jekyll/jekyll) to build my site.
 It worked well and I liked being able to add new pages as markdown, but soon I wanted something more custom.
