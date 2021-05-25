@@ -41,7 +41,6 @@ const RecentProjects = () => {
           I'm using this site as an opportunity to play with GitHub Actions,
           Docker, and React. Currently hosted on GitHub pages.
         </p>
-        <br />
       </fieldset>
     </>
   );

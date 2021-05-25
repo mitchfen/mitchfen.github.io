@@ -22,7 +22,6 @@ const Welcome = () => {
         <br />
         <code className="magenta">STOP RUN.</code>
       </fieldset>
-      <br />
     </>
   );
 };

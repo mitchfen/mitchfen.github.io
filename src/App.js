@@ -10,11 +10,15 @@ function App() {
       <div className="flex-parent">
         <div className="left-column">
           <Welcome />
+          <br />
           <Socials />
+          <br />
         </div>
         <div className="right-column">
           <RecentProjects />
+          <br />
           <Files />
+          <br />
         </div>
       </div>
     </>

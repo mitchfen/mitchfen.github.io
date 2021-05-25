@@ -55,11 +55,12 @@ fieldset {
 a {
   color: var(--orange);
   text-decoration: none;
-  font-style: italics;
+  font-style: italic;
 }
 
 a:hover {
   text-decoration: underline;
+  font-style: italic;
 }
 
 .flex-parent {

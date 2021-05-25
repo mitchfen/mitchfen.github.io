@@ -1,7 +1,6 @@
 const Files = () => {
   return (
     <>
-      <br />
       <fieldset>
         <legend>Files</legend>
         <p>
