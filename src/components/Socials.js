@@ -5,8 +5,8 @@ const Socials = () => {
         <legend>Links</legend>
         <a
           href="https://github.com/mitchfen"
-          rel="noopener noreferrer"
           target="_blank"
+          rel="noreferrer noopener"
         >
           github.com/mitchfen
         </a>
