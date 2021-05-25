@@ -5,7 +5,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json .
 COPY package-lock.json .
 RUN npm ci
-RUN npm install react-scripts@4.0.3 -g
 COPY . .
 RUN npm run build
 

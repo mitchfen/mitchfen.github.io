@@ -9,7 +9,7 @@ I'm more interested in DevOps than front-end development, so I'm using this site
 
 - Publishing the site 🚀
   - When code is pushed to the master branch, the [publish workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/publish.yaml) automatically runs. This action clones my repo to an Ubuntu environment, uses npm to create a production build, and publishes the build to the gh-pages branch.
-- docker-push.yaml 🐳
+- Publishing the container 🐳
   - Upon success of the publish workflow, a [second workflow](https://github.com/mitchfen/mitchfen.github.io/actions/workflows/docker-push.yml) builds and pushes my Docker image to dockerhub. This will be especially useful if I switch to Azure app service or Digital Ocean in the future.
 
 ## Run Locally
@@ -19,7 +19,7 @@ Using npm
 ```bash
   git clone https://github.com/mitchfen/mitchfen.github.io.git
   cd mitchfen.github.io
-  npm install
+  npm ci
   npm run start
 ```
 

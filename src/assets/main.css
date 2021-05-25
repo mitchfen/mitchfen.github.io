@@ -1,39 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&display=swap");
 
 :root {
-  --background: #282a36;
-  --foreground: #f8f8f2;
-  --pink: #ff79c6;
-  --green: #50fa7b;
-  --cyan: #8be9fd;
-  --yellow: #f1fa8c;
+  --background: rgb(24, 25, 27);
+  --foreground: rgba(248, 248, 242, 0.808);
+  --magenta: rgb(232, 62, 140);
+  --orange: rgb(248, 159, 42);
 }
 
-.pink {
-  color: var(--pink);
+.magenta {
+  color: var(--magenta);
 }
 
-.yellow {
-  color: var(--yellow);
+.orange {
+  color: var(--orange);
 }
 
 .foreground {
   color: var(--foreground);
 }
 
-.green {
-  color: var(--green);
-}
-
-.cyan {
-  color: var(--cyan);
-}
-
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-size: 20pt;
-  font-family: "Inconsolata", monospace, sans-serif;
+  font-family: "Encode+Sans+Semi+Expanded", monospace, sans-serif;
   padding: 0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,24 +35,31 @@ p {
 }
 
 code {
-  font-family: monospace, Menlo, Monaco, Consolas, "Courier New";
+  font-family: "Encode+Sans+Semi+Expanded", monospace;
   padding: 2px;
+  font-size: 90%;
 }
 
 legend {
-  border-radius: 5px;
-  border: 1.25px solid #ccc;
+  /*border-radius: 5px;*/
+  border: 0px solid #ccc;
+  padding: 5px 5px 5px 5px;
 }
 
 fieldset {
   border: 1.25px solid #ccc;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 1em;
 }
 
 a {
-  color: var(--cyan);
+  color: var(--orange);
   text-decoration: none;
+  font-style: italics;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .flex-parent {
@@ -87,7 +84,7 @@ a {
 }
 
 .social:hover {
-  color: var(--green);
+  color: var(--magenta);
   transition: transform 125ms;
   transform: translateY(-10px);
 }
@@ -118,10 +115,10 @@ a {
     max-width: 100%;
   }
   .social {
-    color: var(--green);
+    color: var(--magenta);
   }
   .social:hover {
-    color: var(--green);
+    color: var(--magenta);
     transition: none;
     transform: none;
   }
