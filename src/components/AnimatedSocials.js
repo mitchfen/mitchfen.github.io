@@ -3,7 +3,6 @@ import {
   SiLinkedin,
   SiMailDotRu,
   SiOrcid,
-  SiHackerrank,
   SiDocker,
 } from "react-icons/si";
 
@@ -27,20 +26,13 @@ const AnimatedSocials = () => {
           <SiLinkedin className="social" size={40} />
         </a>{" "}
         <a
-          href="https://www.hackerrank.com/mitchfen"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SiHackerrank className="social" size={40} />
-        </a>{" "}
-        <a
           href="https://orcid.org/0000-0002-9684-0447"
           rel="noopener noreferrer"
           target="_blank"
         >
           <SiOrcid className="social" size={40} />
         </a>{" "}
-        <a href="mailto:mitchfen@protonmail.com">
+        <a href="mailto:mitchfen@mitchfen.xyz">
           <SiMailDotRu className="social" size={40} />
         </a>{" "}
         <a

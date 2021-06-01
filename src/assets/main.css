@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&display=swap");
-
 :root {
   --background: rgb(24, 25, 27);
   --foreground: rgba(248, 248, 242, 0.808);
@@ -23,7 +21,7 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-size: 20pt;
-  font-family: "Encode+Sans+Semi+Expanded", monospace, sans-serif;
+  font-family: monospace, sans-serif;
   padding: 0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +33,7 @@ p {
 }
 
 code {
-  font-family: "Encode+Sans+Semi+Expanded", monospace;
+  font-family: monospace;
   padding: 2px;
   font-size: 90%;
 }
@@ -55,12 +53,12 @@ fieldset {
 a {
   color: var(--orange);
   text-decoration: none;
-  font-style: italic;
+  /*font-style: italic; */
 }
 
 a:hover {
   text-decoration: underline;
-  font-style: italic;
+  /*font-style: italic; */
 }
 
 .flex-parent {
