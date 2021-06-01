@@ -1,4 +1,4 @@
-import publicKey from "../assets/mitchfen.asc";
+//import publicKey from "../assets/mitchfen.asc";
 
 const Files = () => {
   return (
@@ -6,7 +6,11 @@ const Files = () => {
       <fieldset>
         <legend>Files</legend>
         <p>
-          <a href={publicKey} target="_blank" rel="noreferrer noopener">
+          <a
+            href="https://raw.githubusercontent.com/mitchfen/mitchfen.github.io/main/src/assets/mitchfen.asc"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             publickey.asc
           </a>
         </p>
